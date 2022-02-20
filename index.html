@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="headt">Color Picker</h1>
+        <p class="headdes">Pick color of your own choice download it | Copy Hex </p>
+    </header>
+    <div class="container">
+        <div class="parent_box pb1">
+        </div>
+        <div class="parent_box pb2">
+        <div class="box b1" style="background: cyan;"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b1').style.background)">copy</h4></div>
+        <div class="box b2"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b2').style.background)">copy</h4></div>
+        <div class="box b3" style="background: burlywood;"> <h4 title="Copy color hex" onclick="copy(document.querySelector('.b3').style.background)">copy</h4></div>
+        <div class="box b4"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b4').style.background)">copy</h4></div>
+        <div class="box b5"style="background: red;"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b5').style.background)">Copy</h4></div>
+        <div class="box b6"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b6').style.background)">copy</h4></div>
+        <div class="box b7"style="background: red;"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b7').style.background)">copy</h4></div>
+        <div class="box b8"><h4 title="Copy color hex" onclick="copy(document.querySelector('.b8').style.background)">copy</h4></div>
+    </div>
+    </div>
+    <div class="btn">
+        <button onclick="change()">Change color</button>
+    </div>
+    <p class="about_dev">Build by <a href="https://github.com/shashwatharsh">Shahswat Harsh</a></p>
+    <script src="index.js"></script>
+    <script>
+        copy = (txt) =>{
+            console.log(txt)
+            navigator.clipboard.writeText(txt);
+        }
+    </script>
+</body>
+</html>
